@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 INSTALLED_APPS += [
     'usuarios',
     'porteiros',
-    'visitors'
+    'visitors',
 ]
 
 MIDDLEWARE = [
