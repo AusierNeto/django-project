@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('<h1 style={\'text-color\':\'green\'}>Hello World!</h1>')
+    return HttpResponse('<h1 style="color: green" >Hello World!</h1>')
