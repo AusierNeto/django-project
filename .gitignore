@@ -1,3 +1,4 @@
 /env/
 mlproject/db.sqlite3
 /mlproject/mlproject/__pycache__/
+/mlproject/porteiros/__pycache__/
