@@ -22,5 +22,5 @@ from visitors.views import register_visitor
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", index, name='index'),
-    path('register-visitors', register_visitor, name='register visitors')
+    path('register-visitors/', register_visitor, name='register_visitors')
 ]
