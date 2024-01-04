@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% block content %}
 
 <div class="container-fluid">
@@ -92,32 +93,25 @@
                     </thead>
 
                     <tbody>
+                        {% for visitor in all_visitors %}
                         <tr>
-                            <td>Don Corleone</td>
-                            <td>123.123.123.12</td>
-                            <td>22 de agosto de 2079 as 15:30</td>
-                            <td>22 de agosto de 2079 as 15:38</td>
-                            <td>Darth Vader</td>
+                            <td> {{ visitor.full_name }}</td>
+                            <td>{{ visitor.cpf }}</td>
+                            <td>{{ visitor.entrance_time }}</td>
+                            <td>{{ visitor.exit_time }}</td>
+                            <td>{{ visitor.registered_by }}</td>
                             <td>
                                 <a href="#">
                                     Ver informações
                                 </a>
                             </td>
                         </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-</div>
-
-<footer class="sticky-footer bg-white">
-    <div class="container my-auto">
-        <div class="copyright text-center my-auto">
-            <span>Copyright © Django framework na prática</span>
-        </div>
-    </div>
-</footer>
 </div>
 
 {% endblock content %}

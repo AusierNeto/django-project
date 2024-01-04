@@ -44,6 +44,7 @@ INSTALLED_APPS += [
     'usuarios',
     'porteiros',
     'visitors',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -82,8 +83,12 @@ WSGI_APPLICATION = 'mlproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',  # Ou o endereço do seu banco de dados
+        'PORT': '5432',  # Porta padrão do PostgreSQL
     }
 }
 
